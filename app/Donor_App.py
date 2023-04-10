@@ -208,6 +208,10 @@ def main():
     if st.button('**Submit**'):
         out = predict_income(age, maritalstatus, sex, workclass, nativecountry, education)
         st.markdown(out_map[out[0]])
+    st.markdown('''
+    The application will provide a classification of "High-Level" for any individual who is 
+    likely to be able to contribute a large donation, or Mid-Level" for an individual who is 
+    likely to only be able to contribute a smaller contribution.''')
 
 
 if __name__ == '__main__':
